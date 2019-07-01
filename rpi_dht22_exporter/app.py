@@ -6,11 +6,3 @@ def create_app(users=None):
     app = Flask(__name__)
     app.register_blueprint(metrics.API)
     return app
-
-
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
