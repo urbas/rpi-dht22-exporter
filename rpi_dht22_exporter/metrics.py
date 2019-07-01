@@ -13,10 +13,10 @@ def get():
         # pylint: disable=import-error
         import Adafruit_DHT
 
-        temperature, humidity = Adafruit_DHT.read_retry(
+        humidity, temperature = Adafruit_DHT.read_retry(
             sensor=Adafruit_DHT.DHT22, pin=int(environ.get("DHT22_PIN", "14"))
         )
-        return f"temperature {temperature}\nhumidity {humidity}\n"
+        return f"humidity {humidity}\ntemperature {temperature}\n"
     except Exception as ex:
         logging.error("Could not read values from DHT22. Error: %s", ex)
         return abort(501)
