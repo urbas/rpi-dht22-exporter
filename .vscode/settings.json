@@ -1,0 +1,23 @@
+{
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.linting.enabled": true,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.egg-info": true,
+    "**/.venv": true
+  },
+  "files.watcherExclude": {
+    "**/__pycache__": true,
+    "**/*.egg-info": true,
+    "**/.venv": true
+  },
+  "python.testing.pytestArgs": [],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true
+}
