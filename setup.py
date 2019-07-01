@@ -5,8 +5,7 @@
 
 from setuptools import setup, find_packages
 
-REQUIREMENTS = ["Flask==1.0.3"]
-# REQUIREMENTS = ["Adafruit_Python_DHT==1.4.0", "Flask==1.0.3"]
+REQUIREMENTS = ["Adafruit_Python_DHT==1.4.0", "Flask==1.0.3"]
 
 SETUP_REQUIREMENTS = ["pytest-runner"]
 
