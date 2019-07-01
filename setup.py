@@ -5,7 +5,8 @@
 
 from setuptools import setup, find_packages
 
-REQUIREMENTS = ["Adafruit_Python_DHT==1.4.0"]
+REQUIREMENTS = ["Flask==1.0.3"]
+# REQUIREMENTS = ["Adafruit_Python_DHT==1.4.0", "Flask==1.0.3"]
 
 SETUP_REQUIREMENTS = ["pytest-runner"]
 
@@ -22,7 +23,7 @@ setup(
     install_requires=REQUIREMENTS,
     include_package_data=True,
     keywords="rpi_dht22_exporter",
-    name="urbasys",
+    name="rpi_dht22_exporter",
     packages=find_packages(include=["rpi_dht22_exporter"]),
     setup_requires=SETUP_REQUIREMENTS,
     test_suite="tests",
