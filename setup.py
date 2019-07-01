@@ -2,9 +2,13 @@
 
 """The setup script."""
 
+from os import uname
 from setuptools import setup, find_packages
 
-REQUIREMENTS = ["Adafruit_Python_DHT==1.4.0", "Flask==1.0.3"]
+REQUIREMENTS = ["Flask==1.0.3"]
+
+if uname().machine.startswith("arm"):
+    REQUIREMENTS.append("Adafruit_Python_DHT==1.4.0")
 
 SETUP_REQUIREMENTS = ["pytest-runner"]
 
@@ -14,9 +18,7 @@ setup(
     author="Matej Urbas",
     author_email="matej.urbas@gmail.com",
     entry_points={
-        "console_scripts": [
-            "rpi-dht22-exporter=rpi_dht22_exporter.app:main",
-        ]
+        "console_scripts": ["rpi-dht22-exporter=rpi_dht22_exporter.app:main"]
     },
     install_requires=REQUIREMENTS,
     include_package_data=True,
