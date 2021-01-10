@@ -9,7 +9,6 @@ API = Blueprint("metrics", __name__, url_prefix="/metrics")
 @API.route("")
 def get():
     try:
-        # pylint: disable=import-error
         import Adafruit_DHT
 
         humidity, temperature = Adafruit_DHT.read_retry(
