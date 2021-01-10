@@ -2,12 +2,13 @@
 
 """The setup script."""
 
-from os import uname
+import os
+import re
 from setuptools import setup, find_packages
 
 REQUIREMENTS = ["Flask==1.0.3"]
 
-if uname().machine.startswith("arm"):
+if re.search(r"^(aarch64|arm)", os.uname().machine):
     REQUIREMENTS.append("Adafruit_Python_DHT==1.4.0")
 
 SETUP_REQUIREMENTS = ["pytest-runner"]
