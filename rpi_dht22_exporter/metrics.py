@@ -2,7 +2,6 @@ import logging
 from os import environ
 
 from flask import Blueprint, abort
-from flask.json import jsonify
 
 API = Blueprint("metrics", __name__, url_prefix="/metrics")
 
