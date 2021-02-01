@@ -10,7 +10,7 @@ pip install rpi-dht-22-exporter
 
 ## Running
 ```bash
-rpi-dht22-exporter --pin <gpio pin number>
+rpi-dht22-exporter --pin-number <gpio pin number>
 ```
 
 This will serve metrics at `http://0.0.0.0:9894/metrics`.
