@@ -36,5 +36,5 @@ setup(
     test_suite="test",
     tests_require=TEST_REQUIREMENTS,
     url="https://github.com/urbas/rpi-dht22-exporter",
-    version="2.0.0",
+    version="2.0.1",
 )
