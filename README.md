@@ -1,4 +1,4 @@
-# Raspberry Pi DHT22 Prometheus Exporter
+# Raspberry Pi DHT22 Prometheus Exporter [![build-badge]](https://travis-ci.com/github/urbas/rpi-dht22-exporter) [![pypi-badge]](https://pypi.org/project/rpi-dht22-exporter/)
 
 Exports DHT22 temperature and humidity readings in a format readable by Prometheus.
 
@@ -24,3 +24,6 @@ scrape_configs:
         labels:
           location: 'bedroom'
 ```
+
+[build-badge]: https://travis-ci.com/urbas/rpi-dht22-exporter.svg?branch=master
+[pypi-badge]: https://badge.fury.io/py/rpi-dht22-exporter.svg
