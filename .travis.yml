@@ -1,0 +1,22 @@
+language: python
+python:
+- '3.6'
+- '3.7'
+- '3.8'
+- '3.9'
+install:
+- pip install -r requirements_dev.txt
+- pip install -e .
+script:
+- black --check setup.py test rpi_dht22_exporter
+- flake8 setup.py test rpi_dht22_exporter
+- pytest test
+- mypy test rpi_dht22_exporter
+deploy:
+  provider: pypi
+  user: __token__
+  distributions: sdist
+  on:
+    tags: true
+    repo: urbas/rpi-dht22-exporter
+    python: '3.8'
