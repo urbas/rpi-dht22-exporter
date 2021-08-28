@@ -1,4 +1,4 @@
-# 2.0.1 (upcoming)
+# 2.0.1
 
 - CLI help test assertion less picky about help format.
 
